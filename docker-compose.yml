@@ -1,0 +1,145 @@
+version: '3.8'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBIT_USER:-guest}
+      RABBITMQ_DEFAULT_PASS: ${RABBIT_PASS:-guest}
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  redis:
+    image: redis:7-alpine
+    command: [ "redis-server", "--requirepass", "${REDIS_PASS:-your_redis_pass}" ]
+    ports:
+      - "6379:6379"
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASS:-your_redis_pass}
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+  manager:
+    build: .
+    command: ["./main", "-mode=manager"]
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      REDIS_PASS: ${REDIS_PASS:-your_redis_pass}
+      RABBIT_USER: ${RABBIT_USER:-guest}
+      RABBIT_PASS: ${RABBIT_PASS:-guest}
+      RAND_SEED: ${RAND_SEED:-42}
+    ports:
+      - "2112:2112" # Metrics
+    volumes:
+      - .:/app  # Mounts task_config.json from host
+  worker_a:
+    build: .
+    command: ["./main", "-mode=worker", "-id=A"]
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      manager:
+        condition: service_started
+    environment:
+      REDIS_PASS: ${REDIS_PASS:-your_redis_pass}
+      RABBIT_USER: ${RABBIT_USER:-guest}
+      RABBIT_PASS: ${RABBIT_PASS:-guest}
+    ports:
+      - "2113:2112"
+    volumes:
+      - .:/app
+    restart: always
+  worker_b:
+    build: .
+    command: ["./main", "-mode=worker", "-id=B"]
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      manager:
+        condition: service_started
+    environment:
+      REDIS_PASS: ${REDIS_PASS:-your_redis_pass}
+      RABBIT_USER: ${RABBIT_USER:-guest}
+      RABBIT_PASS: ${RABBIT_PASS:-guest}
+    ports:
+      - "2114:2112"
+    volumes:
+      - .:/app
+    restart: always
+  worker_c:
+    build: .
+    command: ["./main", "-mode=worker", "-id=C"]
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      manager:
+        condition: service_started
+    environment:
+      REDIS_PASS: ${REDIS_PASS:-your_redis_pass}
+      RABBIT_USER: ${RABBIT_USER:-guest}
+      RABBIT_PASS: ${RABBIT_PASS:-guest}
+    ports:
+      - "2115:2112"
+    volumes:
+      - .:/app
+    restart: always
+  worker_d:
+    build: .
+    command: ["./main", "-mode=worker", "-id=D"]
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      manager:
+        condition: service_started
+    environment:
+      REDIS_PASS: ${REDIS_PASS:-your_redis_pass}
+      RABBIT_USER: ${RABBIT_USER:-guest}
+      RABBIT_PASS: ${RABBIT_PASS:-guest}
+    ports:
+      - "2116:2112"
+    volumes:
+      - .:/app
+    restart: always
+  worker_e:
+    build: .
+    command: ["./main", "-mode=worker", "-id=E"]
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      manager:
+        condition: service_started
+    environment:
+      REDIS_PASS: ${REDIS_PASS:-your_redis_pass}
+      RABBIT_USER: ${RABBIT_USER:-guest}
+      RABBIT_PASS: ${RABBIT_PASS:-guest}
+    ports:
+      - "2117:2112"
+    volumes:
+      - .:/app
+    restart: always

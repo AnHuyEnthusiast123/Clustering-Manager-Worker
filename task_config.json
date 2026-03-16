@@ -1,0 +1,632 @@
+{
+  "face_detection": {
+    "720p": {
+      "30": {
+        "20": {
+          "complexity": 5.78,
+          "cpu_req": 7.4,
+          "mem_req": 1.2,
+          "estimated_process_time": 14.44,
+          "pre_time": 5.0,
+          "inf_time": 4.4399999999999995,
+          "post_time": 5.0
+        },
+        "30": {
+          "complexity": 6.67,
+          "cpu_req": 11.1,
+          "mem_req": 1.9,
+          "estimated_process_time": 16.67,
+          "pre_time": 5.0,
+          "inf_time": 6.670000000000002,
+          "post_time": 5.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 7.56,
+          "cpu_req": 14.8,
+          "mem_req": 2.5,
+          "estimated_process_time": 18.89,
+          "pre_time": 5.0,
+          "inf_time": 8.89,
+          "post_time": 5.0
+        },
+        "30": {
+          "complexity": 9.33,
+          "cpu_req": 22.2,
+          "mem_req": 3.7,
+          "estimated_process_time": 23.33,
+          "pre_time": 5.0,
+          "inf_time": 13.329999999999998,
+          "post_time": 5.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 9.33,
+          "cpu_req": 22.2,
+          "mem_req": 3.7,
+          "estimated_process_time": 23.33,
+          "pre_time": 5.0,
+          "inf_time": 13.329999999999998,
+          "post_time": 5.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 33.3,
+          "mem_req": 5.6,
+          "estimated_process_time": 30.0,
+          "pre_time": 5.0,
+          "inf_time": 20.0,
+          "post_time": 5.0
+        }
+      }
+    },
+    "1080p": {
+      "30": {
+        "20": {
+          "complexity": 8.0,
+          "cpu_req": 16.7,
+          "mem_req": 2.8,
+          "estimated_process_time": 20.0,
+          "pre_time": 5.0,
+          "inf_time": 10.0,
+          "post_time": 5.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 25.0,
+          "mem_req": 4.2,
+          "estimated_process_time": 25.0,
+          "pre_time": 5.0,
+          "inf_time": 15.0,
+          "post_time": 5.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 33.3,
+          "mem_req": 5.6,
+          "estimated_process_time": 30.0,
+          "pre_time": 5.0,
+          "inf_time": 20.0,
+          "post_time": 5.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 50.0,
+          "mem_req": 8.3,
+          "estimated_process_time": 40.0,
+          "pre_time": 5.0,
+          "inf_time": 30.0,
+          "post_time": 5.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 50.0,
+          "mem_req": 8.3,
+          "estimated_process_time": 40.0,
+          "pre_time": 5.0,
+          "inf_time": 30.0,
+          "post_time": 5.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 75.0,
+          "mem_req": 12.5,
+          "estimated_process_time": 55.0,
+          "pre_time": 5.0,
+          "inf_time": 45.0,
+          "post_time": 5.0
+        }
+      }
+    }
+  },
+  "face_recognition": {
+    "720p": {
+      "30": {
+        "20": {
+          "complexity": 6.48,
+          "cpu_req": 17.8,
+          "mem_req": 3.0,
+          "estimated_process_time": 38.89,
+          "pre_time": 2.0,
+          "inf_time": 8.89,
+          "post_time": 28.0
+        },
+        "30": {
+          "complexity": 7.22,
+          "cpu_req": 26.7,
+          "mem_req": 4.4,
+          "estimated_process_time": 43.33,
+          "pre_time": 2.0,
+          "inf_time": 13.329999999999998,
+          "post_time": 28.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 7.96,
+          "cpu_req": 35.6,
+          "mem_req": 5.9,
+          "estimated_process_time": 47.78,
+          "pre_time": 2.0,
+          "inf_time": 17.78,
+          "post_time": 28.0
+        },
+        "30": {
+          "complexity": 9.44,
+          "cpu_req": 53.3,
+          "mem_req": 8.9,
+          "estimated_process_time": 56.67,
+          "pre_time": 2.0,
+          "inf_time": 26.67,
+          "post_time": 28.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 9.44,
+          "cpu_req": 53.3,
+          "mem_req": 8.9,
+          "estimated_process_time": 56.67,
+          "pre_time": 2.0,
+          "inf_time": 26.67,
+          "post_time": 28.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 80.0,
+          "mem_req": 13.3,
+          "estimated_process_time": 70.0,
+          "pre_time": 2.0,
+          "inf_time": 40.0,
+          "post_time": 28.0
+        }
+      }
+    },
+    "1080p": {
+      "30": {
+        "20": {
+          "complexity": 8.33,
+          "cpu_req": 40.0,
+          "mem_req": 6.7,
+          "estimated_process_time": 50.0,
+          "pre_time": 2.0,
+          "inf_time": 20.0,
+          "post_time": 28.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 60.0,
+          "mem_req": 10.0,
+          "estimated_process_time": 60.0,
+          "pre_time": 2.0,
+          "inf_time": 30.0,
+          "post_time": 28.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 80.0,
+          "mem_req": 13.3,
+          "estimated_process_time": 70.0,
+          "pre_time": 2.0,
+          "inf_time": 40.0,
+          "post_time": 28.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 100,
+          "mem_req": 20.0,
+          "estimated_process_time": 90.0,
+          "pre_time": 2.0,
+          "inf_time": 60.0,
+          "post_time": 28.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 100,
+          "mem_req": 20.0,
+          "estimated_process_time": 90.0,
+          "pre_time": 2.0,
+          "inf_time": 60.0,
+          "post_time": 28.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 100,
+          "mem_req": 30.0,
+          "estimated_process_time": 120.0,
+          "pre_time": 2.0,
+          "inf_time": 90.0,
+          "post_time": 28.0
+        }
+      }
+    }
+  },
+  "heatmap_generate": {
+    "720p": {
+      "30": {
+        "20": {
+          "complexity": 5.78,
+          "cpu_req": 8.9,
+          "mem_req": 1.5,
+          "estimated_process_time": 17.33,
+          "pre_time": 6.0,
+          "inf_time": 5.329999999999998,
+          "post_time": 6.0
+        },
+        "30": {
+          "complexity": 6.67,
+          "cpu_req": 13.3,
+          "mem_req": 2.2,
+          "estimated_process_time": 20.0,
+          "pre_time": 6.0,
+          "inf_time": 8.0,
+          "post_time": 6.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 7.56,
+          "cpu_req": 17.8,
+          "mem_req": 3.0,
+          "estimated_process_time": 22.67,
+          "pre_time": 6.0,
+          "inf_time": 10.670000000000002,
+          "post_time": 6.0
+        },
+        "30": {
+          "complexity": 9.33,
+          "cpu_req": 26.7,
+          "mem_req": 4.4,
+          "estimated_process_time": 28.0,
+          "pre_time": 6.0,
+          "inf_time": 16.0,
+          "post_time": 6.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 9.33,
+          "cpu_req": 26.7,
+          "mem_req": 4.4,
+          "estimated_process_time": 28.0,
+          "pre_time": 6.0,
+          "inf_time": 16.0,
+          "post_time": 6.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 40.0,
+          "mem_req": 6.7,
+          "estimated_process_time": 36.0,
+          "pre_time": 6.0,
+          "inf_time": 24.0,
+          "post_time": 6.0
+        }
+      }
+    },
+    "1080p": {
+      "30": {
+        "20": {
+          "complexity": 8.0,
+          "cpu_req": 20.0,
+          "mem_req": 3.3,
+          "estimated_process_time": 24.0,
+          "pre_time": 6.0,
+          "inf_time": 12.0,
+          "post_time": 6.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 30.0,
+          "mem_req": 5.0,
+          "estimated_process_time": 30.0,
+          "pre_time": 6.0,
+          "inf_time": 18.0,
+          "post_time": 6.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 40.0,
+          "mem_req": 6.7,
+          "estimated_process_time": 36.0,
+          "pre_time": 6.0,
+          "inf_time": 24.0,
+          "post_time": 6.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 60.0,
+          "mem_req": 10.0,
+          "estimated_process_time": 48.0,
+          "pre_time": 6.0,
+          "inf_time": 36.0,
+          "post_time": 6.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 60.0,
+          "mem_req": 10.0,
+          "estimated_process_time": 48.0,
+          "pre_time": 6.0,
+          "inf_time": 36.0,
+          "post_time": 6.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 90.0,
+          "mem_req": 15.0,
+          "estimated_process_time": 66.0,
+          "pre_time": 6.0,
+          "inf_time": 54.0,
+          "post_time": 6.0
+        }
+      }
+    }
+  },
+  "transcode_low": {
+    "720p": {
+      "30": {
+        "20": {
+          "complexity": 5.71,
+          "cpu_req": 12.1,
+          "mem_req": 2.0,
+          "estimated_process_time": 23.41,
+          "pre_time": 8.0,
+          "inf_time": 7.41,
+          "post_time": 8.0
+        },
+        "30": {
+          "complexity": 6.61,
+          "cpu_req": 18.2,
+          "mem_req": 3.0,
+          "estimated_process_time": 27.11,
+          "pre_time": 8.0,
+          "inf_time": 11.11,
+          "post_time": 8.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 7.52,
+          "cpu_req": 24.3,
+          "mem_req": 4.0,
+          "estimated_process_time": 30.81,
+          "pre_time": 8.0,
+          "inf_time": 14.809999999999999,
+          "post_time": 8.0
+        },
+        "30": {
+          "complexity": 9.32,
+          "cpu_req": 36.4,
+          "mem_req": 6.1,
+          "estimated_process_time": 38.22,
+          "pre_time": 8.0,
+          "inf_time": 22.22,
+          "post_time": 8.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 9.32,
+          "cpu_req": 36.4,
+          "mem_req": 6.1,
+          "estimated_process_time": 38.22,
+          "pre_time": 8.0,
+          "inf_time": 22.22,
+          "post_time": 8.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 54.7,
+          "mem_req": 9.1,
+          "estimated_process_time": 49.33,
+          "pre_time": 8.0,
+          "inf_time": 33.33,
+          "post_time": 8.0
+        }
+      }
+    },
+    "1080p": {
+      "30": {
+        "20": {
+          "complexity": 7.97,
+          "cpu_req": 27.3,
+          "mem_req": 4.6,
+          "estimated_process_time": 32.67,
+          "pre_time": 8.0,
+          "inf_time": 16.67,
+          "post_time": 8.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 41.0,
+          "mem_req": 6.8,
+          "estimated_process_time": 41.0,
+          "pre_time": 8.0,
+          "inf_time": 25.0,
+          "post_time": 8.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 54.7,
+          "mem_req": 9.1,
+          "estimated_process_time": 49.33,
+          "pre_time": 8.0,
+          "inf_time": 33.33,
+          "post_time": 8.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 82.0,
+          "mem_req": 13.7,
+          "estimated_process_time": 66.0,
+          "pre_time": 8.0,
+          "inf_time": 50.0,
+          "post_time": 8.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 82.0,
+          "mem_req": 13.7,
+          "estimated_process_time": 66.0,
+          "pre_time": 8.0,
+          "inf_time": 50.0,
+          "post_time": 8.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 100,
+          "mem_req": 20.5,
+          "estimated_process_time": 91.0,
+          "pre_time": 8.0,
+          "inf_time": 75.0,
+          "post_time": 8.0
+        }
+      }
+    }
+  },
+  "transcode_high": {
+    "720p": {
+      "30": {
+        "20": {
+          "complexity": 5.78,
+          "cpu_req": 14.8,
+          "mem_req": 2.5,
+          "estimated_process_time": 28.89,
+          "pre_time": 10.0,
+          "inf_time": 8.89,
+          "post_time": 10.0
+        },
+        "30": {
+          "complexity": 6.67,
+          "cpu_req": 22.2,
+          "mem_req": 3.7,
+          "estimated_process_time": 33.33,
+          "pre_time": 10.0,
+          "inf_time": 13.329999999999998,
+          "post_time": 10.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 7.56,
+          "cpu_req": 29.6,
+          "mem_req": 4.9,
+          "estimated_process_time": 37.78,
+          "pre_time": 10.0,
+          "inf_time": 17.78,
+          "post_time": 10.0
+        },
+        "30": {
+          "complexity": 9.33,
+          "cpu_req": 44.4,
+          "mem_req": 7.4,
+          "estimated_process_time": 46.67,
+          "pre_time": 10.0,
+          "inf_time": 26.67,
+          "post_time": 10.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 9.33,
+          "cpu_req": 44.4,
+          "mem_req": 7.4,
+          "estimated_process_time": 46.67,
+          "pre_time": 10.0,
+          "inf_time": 26.67,
+          "post_time": 10.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 66.7,
+          "mem_req": 11.1,
+          "estimated_process_time": 60.0,
+          "pre_time": 10.0,
+          "inf_time": 40.0,
+          "post_time": 10.0
+        }
+      }
+    },
+    "1080p": {
+      "30": {
+        "20": {
+          "complexity": 8.0,
+          "cpu_req": 33.3,
+          "mem_req": 5.6,
+          "estimated_process_time": 40.0,
+          "pre_time": 10.0,
+          "inf_time": 20.0,
+          "post_time": 10.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 50.0,
+          "mem_req": 8.3,
+          "estimated_process_time": 50.0,
+          "pre_time": 10.0,
+          "inf_time": 30.0,
+          "post_time": 10.0
+        }
+      },
+      "60": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 66.7,
+          "mem_req": 11.1,
+          "estimated_process_time": 60.0,
+          "pre_time": 10.0,
+          "inf_time": 40.0,
+          "post_time": 10.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 100,
+          "mem_req": 16.7,
+          "estimated_process_time": 80.0,
+          "pre_time": 10.0,
+          "inf_time": 60.0,
+          "post_time": 10.0
+        }
+      },
+      "90": {
+        "20": {
+          "complexity": 10,
+          "cpu_req": 100,
+          "mem_req": 16.7,
+          "estimated_process_time": 80.0,
+          "pre_time": 10.0,
+          "inf_time": 60.0,
+          "post_time": 10.0
+        },
+        "30": {
+          "complexity": 10,
+          "cpu_req": 100,
+          "mem_req": 25.0,
+          "estimated_process_time": 110.0,
+          "pre_time": 10.0,
+          "inf_time": 90.0,
+          "post_time": 10.0
+        }
+      }
+    }
+  }
+}

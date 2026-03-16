@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'pizza_manager'
+    static_configs:
+      - targets: ['manager:2112']  # Tên service trong docker-compose
+  - job_name: 'pizza_workers'
+    static_configs:
+      - targets: ['worker_a:2112', 'worker_b:2112', 'worker_c:2112', 'worker_d:2112', 'worker_e:2112']

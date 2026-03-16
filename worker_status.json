@@ -1,0 +1,63 @@
+{
+ "A": {
+  "cpu_usage": 100,
+  "current_task": "",
+  "energy_cost": 0,
+  "free_mem": 999.9,
+  "last_heartbeat": 1772612218,
+  "load": 0.2,
+  "recent_types": [
+   "transcode_low",
+   "heatmap_generate"
+  ]
+ },
+ "B": {
+  "cpu_usage": 100,
+  "current_task": "",
+  "energy_cost": 0,
+  "free_mem": 1006.4,
+  "last_heartbeat": 1772612218,
+  "load": 0.2933,
+  "recent_types": [
+   "face_detection",
+   "face_detection",
+   "transcode_high"
+  ]
+ },
+ "C": {
+  "cpu_usage": 88.9,
+  "current_task": "",
+  "energy_cost": 0,
+  "free_mem": 1009.1999999999999,
+  "last_heartbeat": 1772612218,
+  "load": 0.1933,
+  "recent_types": [
+   "transcode_high",
+   "face_detection"
+  ]
+ },
+ "D": {
+  "cpu_usage": 73.3,
+  "current_task": "",
+  "energy_cost": 0,
+  "free_mem": 1011.8000000000001,
+  "last_heartbeat": 1772612218,
+  "load": 0.1744,
+  "recent_types": [
+   "face_recognition",
+   "heatmap_generate"
+  ]
+ },
+ "E": {
+  "cpu_usage": 93.4,
+  "current_task": "",
+  "energy_cost": 0,
+  "free_mem": 1008.5,
+  "last_heartbeat": 1772612218,
+  "load": 0.17220000000000002,
+  "recent_types": [
+   "transcode_high",
+   "face_recognition"
+  ]
+ }
+}
